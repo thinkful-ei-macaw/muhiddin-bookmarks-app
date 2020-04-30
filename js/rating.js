@@ -1,5 +1,4 @@
-
-const getStarRating = (rating) => {
+function getStarRating(rating) {
   if(rating === 1) {
     return(
       `
@@ -52,6 +51,6 @@ const getStarRating = (rating) => {
     );
   }
     
-};
+}
 
 export default getStarRating;

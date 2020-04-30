@@ -26,9 +26,6 @@ h3 {
 }
 
 .rating {
-  float: right;
-}
-#rating {
   margin: 0;
   padding: 0;
 }
@@ -74,7 +71,17 @@ input[type=button]:hover, button:hover, input[type=submit]:hover {
   transition: all ease-in-out 0.4s;
   outline: none;
 }
-
+/* .bookmark-item-row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.bookmark-item-title {
+ align-self: center;
+} */
+.rating {
+  float: right;
+}
 button {
   position: relative;
   float: right;

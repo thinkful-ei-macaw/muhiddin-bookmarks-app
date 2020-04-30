@@ -1,12 +1,10 @@
-import container from './container';
-import bookmarkList from './bookmark-list';
+import api from './api.js';
+import store from './store.js';
+import bookmarkList from './bookmark-list.js';
 
-export const events = () => {
+const main = function () {
 
-  $('body').html(container());
-
-  $('.bookmark-list-button').click((e) => {
-    e.preventDefault();
+  $('.bookmark-list-button').click(() => {
     if($('#bookmark-form').hasClass('hidden')){
       $('.bookmarks-list').toggleClass('hidden');
     } else {
@@ -34,5 +32,17 @@ export const events = () => {
   $('#cancel').click((e) => {
     e.preventDefault();
     $('#bookmark-form').toggleClass('hidden');
-  });  
+  });
+  
+  api.getBookmarks()
+    .then(res => res.json())
+    .then((bookmarks) => {
+      bookmarks.forEach((bookmark) => store.addBookmark(bookmark));
+      bookmarkList.render();
+    });
+ 
+  bookmarkList.bindEventListeners();
+  bookmarkList.render();
 };
+
+$(main);

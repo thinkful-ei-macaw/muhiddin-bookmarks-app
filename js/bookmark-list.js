@@ -1,6 +1,6 @@
-import store from './store';
-import api from './api';
-import getStarRating from './rating';
+import store from './store.js';
+import api from './api.js';
+import getStarRating from './rating.js';
 
 const generateBookmark = function (bookmark) {  
   return (
@@ -97,6 +97,9 @@ const handleEditBookmark= function () {
       });
   });
 };
+
+
+
 
 const bindEventListeners = function () {
   handleNewBookmarkSubmit();
