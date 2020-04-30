@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  text-align: center;
+  background: url('background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* #bookmark-form {
+  display: none;
+} */
+.hidden {
+  display: none;
+}
+h3 {
+  color: white;
+}
+
+.showing h3, .rating {
+  display: inline;
+}
+
+.rating {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: rgb(252, 252, 18);
+}
+.checked {
+  color: gold;
+}
+main {
+  margin: 0 auto;
+  width: 80%;
+  padding: 40px 0;
+  background-color: teal;
+  border-radius: 10px;
+}
+
+input[type=text], input[type=url], textarea {
+  width: 100%;
+}
+
+input[type=button], button, input[type=submit] {
+  padding: 5px 20px;
+  outline: none;
+  background-color: darkblue;
+  color: white;
+  border-color: darkblue;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+input[type=button]:hover, button:hover, input[type=submit]:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  background-color: gold;
+  border: 2px solid gold;
+  transition: all ease-in-out 0.4s;
+  outline: none;
+}
+/* .bookmark-item-row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.bookmark-item-title {
+ align-self: center;
+} */
+.rating {
+  float: right;
+}
+button {
+  position: relative;
+  float: right;
+  bottom: 15px;
+  right: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: rgb(156, 156, 199);
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+}
+
+
+li {
+  border: 1px solid white;
+  margin: 10px 35px 10px 0;
+  background-color: rgb(59, 211, 104);
+  padding: 10px;
+}
+input, textarea {
+  padding: 10px;
+  margin: 10px 0;
+}
+input[type=number] {
+  padding: 2px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+
+
+@media (min-width: 500px) {
+  main {
+    width: 50%;
+  }
+}

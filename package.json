@@ -1,0 +1,26 @@
+{
+  "name": "muhiddin-bookmarks-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "css-loader": "^3.5.3",
+    "cuid": "^2.1.8",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "jquery": "^3.5.0",
+    "normalize.css": "^8.0.1",
+    "style-loader": "^1.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC"
+}
