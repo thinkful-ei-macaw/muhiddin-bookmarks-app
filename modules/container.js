@@ -1,7 +1,7 @@
 
-const container = () => {
-  return(
-    `<div id='container'>
+export const container = () => {
+  return (
+    `
     <header>
     <h1>Bookmarks App</h1>
   </header>
@@ -56,9 +56,6 @@ const container = () => {
     </div>
   </main>
   <footer><a href="https://github.com/muhiddinsgithub" target="_blank" rel="noopener noreferrer">muhiddinsgithub</a></footer>
-  </div>
-  `
+    `
   );
-}
-
-export default container;
+};

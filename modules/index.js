@@ -1,11 +1,12 @@
-import './index.css';
-import events from './events';
 import api from './api';
 import store from './store';
 import bookmarkList from './bookmark-list';
+import events from './events';
 
 const main = function () {
-  events();  
+  
+  events();
+
   api.getBookmarks()
     .then(res => res.json())
     .then((bookmarks) => {

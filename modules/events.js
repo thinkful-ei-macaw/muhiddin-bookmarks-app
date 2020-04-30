@@ -1,12 +1,12 @@
-import $ from 'jquery';
 import container from './container';
 import bookmarkList from './bookmark-list';
 
-const events = () => {
-  
-  $('body').html(container);
+export const events = () => {
 
-  $('.bookmark-list-button').click(() => {
+  $('body').html(container());
+
+  $('.bookmark-list-button').click((e) => {
+    e.preventDefault();
     if($('#bookmark-form').hasClass('hidden')){
       $('.bookmarks-list').toggleClass('hidden');
     } else {
@@ -34,8 +34,5 @@ const events = () => {
   $('#cancel').click((e) => {
     e.preventDefault();
     $('#bookmark-form').toggleClass('hidden');
-  });
-
+  });  
 };
-
-export default events;

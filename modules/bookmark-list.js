@@ -98,9 +98,6 @@ const handleEditBookmark= function () {
   });
 };
 
-
-
-
 const bindEventListeners = function () {
   handleNewBookmarkSubmit();
   handleDeleteBookmark();
