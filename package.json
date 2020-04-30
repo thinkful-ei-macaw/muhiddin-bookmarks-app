@@ -21,6 +21,5 @@
     "start": "webpack-dev-server",
     "build": "webpack --mode production"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Muhiddin Kurbonov"
 }
