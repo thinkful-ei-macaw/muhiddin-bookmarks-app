@@ -2,7 +2,7 @@
   "name": "muhiddin-bookmarks-app",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "index.js",
   "dependencies": {
     "css-loader": "^3.5.3",
     "cuid": "^2.1.8",
