@@ -16,6 +16,7 @@ const main = function () {
   $('#filterByRating').change(() => {
     let ratingToFilter = $('#filterByRating').val();
     bookmarkList.filterRender(ratingToFilter);
+    $('#filterByRating').val() = '';
   });
 
   $('.add-bookmark-button').click((e) => {
