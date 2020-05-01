@@ -13,6 +13,11 @@ const main = function () {
     }
   });
 
+  $('#filterByRating').change(() => {
+    let ratingToFilter = $('#filterByRating').val();
+    bookmarkList.filterRender(ratingToFilter);
+  });
+
   $('.add-bookmark-button').click((e) => {
     e.preventDefault();
     if($('.bookmarks-list').hasClass('hidden')) {

@@ -29,6 +29,12 @@ const generateBookmarkListString = function (bookmarkList) {
   return bookmarks.join('');
 };
 
+const filterRender = (ratingToFilter) => {
+  let filtered = store.filterByRating(ratingToFilter);
+  const filteredBookmarkString = generateBookmarkListString(filtered);
+  $('.js-bookmarks-list').html(filteredBookmarkString);
+}
+
 const render = function () {
   let bookmarks = [...store.bookmarks];
   // render the bookmark list in the DOM
@@ -109,6 +115,7 @@ const bindEventListeners = function () {
 // This object contains the only exposed methods from this module:
 export default {
   getBookmarkId,
+  filterRender,
   render,
   bindEventListeners
 };

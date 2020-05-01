@@ -41,7 +41,7 @@ h1 {
 }
 main {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   padding: 40px 0;
   background-color: teal;
   border-radius: 10px;
@@ -125,6 +125,6 @@ form {
 
 @media (min-width: 500px) {
   main {
-    width: 50%;
+    width: 75%;
   }
 }
